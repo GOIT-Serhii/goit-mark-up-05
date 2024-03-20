@@ -598,7 +598,7 @@ footer .logo {
 
 /* hidden */
 
-    /* position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -608,7 +608,7 @@ footer .logo {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;  */
+    overflow: hidden; 
 }
 
 .modal {
