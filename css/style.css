@@ -683,6 +683,12 @@ footer .logo {
     margin-bottom: 4px;
 }
 
+.form-item-wrap {
+    margin-bottom: 8px;
+}
+.form-item-wrap.comment {
+    margin-bottom: 16px;
+}
 
 
 .input-field {
@@ -735,7 +741,7 @@ footer .logo {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
-    margin-bottom: 16px;
+    
     background-color: transparent;
     resize: none;
     outline: transparent;
