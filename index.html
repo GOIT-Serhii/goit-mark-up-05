@@ -479,7 +479,7 @@
           <p class="footer-subscribe-title">Subscribe</p>
 
           <form class="footer-form">
-            <label for="">
+            <label for="" class="footer-label">
               <input
                 type="email"
                 name="user-email"
@@ -497,7 +497,7 @@
       </div>
     </footer>
     <!-- ___________MODAL-OVERLAY___________ -->
-    <div class="modal-overlay hidden">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-close-button-icon" width="8" height="8">
@@ -549,25 +549,35 @@
             </div>
           </div>
           <div class="form-item-wrap">
-            <label class="label-text label-textarea" for="comment"
+            <label class="label-text label-textarea" for="user-comment"
               >Comment</label
             >
             <textarea
-              name="comment"
+              name="user-comment"
               class="comment-field"
               placeholder="Text input"
-              id="comment"
+              id="user-comment"
             ></textarea>
           </div>
 
           <div class="checkbox-wrap">
-            <input type="checkbox" name="privacy-policy" class="checkbox" />
-            <p class="checkbox-text">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              class="visually-hidden"
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="checkbox-text">
+              <span class="label-span">
+                <svg class="span-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a href="" target="_blank" class="checkbox-link"
-                >Privacy Policy</a
-              >
-            </p>
+            </label>
+
+            <a href="" target="_blank" class="checkbox-link"> Privacy Policy</a>
           </div>
           <button type="submit" class="submit-btn">Send</button>
         </form>
