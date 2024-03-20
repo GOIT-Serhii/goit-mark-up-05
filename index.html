@@ -479,12 +479,14 @@
           <p class="footer-subscribe-title">Subscribe</p>
 
           <form class="footer-form">
-            <input
-              type="email"
-              name="user-email"
-              placeholder="E-mail"
-              class="subscribe-email"
-            /><button class="footer-subscribe-btn">
+            <label for="">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                class="subscribe-email"
+            /></label>
+            <button class="footer-subscribe-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -504,8 +506,8 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
-          <div class="form-wrap">
-            <label class="label-text" for="user-name"><span>Name</span></label>
+          <div class="form-item-wrap">
+            <label class="label-text" for="user-name">Name</label>
             <div class="modal-input-wrap">
               <input
                 type="text"
@@ -517,7 +519,9 @@
                 <use href="./images/icons.svg#user-icon"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="form-item-wrap">
             <label class="label-text" for="user-tel">Phone</label>
             <div class="modal-input-wrap">
               <input
@@ -529,7 +533,9 @@
                 <use href="./images/icons.svg#phone-icon"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="form-item-wrap">
             <label class="label-text" for="user-email">Email</label>
             <div class="modal-input-wrap">
               <input
@@ -541,6 +547,8 @@
                 <use href="./images/icons.svg#mail-icon"></use>
               </svg>
             </div>
+          </div>
+          <div class="form-item-wrap">
             <label class="label-text label-textarea" for="comment"
               >Comment</label
             >
@@ -550,18 +558,18 @@
               placeholder="Text input"
               id="comment"
             ></textarea>
-
-            <div class="checkbox-wrap">
-              <input type="checkbox" name="privacy-policy" class="checkbox" />
-              <p class="checkbox-text">
-                I accept the terms and conditions of the
-                <a href="" target="_blank" class="checkbox-link"
-                  >Privacy Policy</a
-                >
-              </p>
-            </div>
-            <button type="submit" class="submit-btn">Send</button>
           </div>
+
+          <div class="checkbox-wrap">
+            <input type="checkbox" name="privacy-policy" class="checkbox" />
+            <p class="checkbox-text">
+              I accept the terms and conditions of the
+              <a href="" target="_blank" class="checkbox-link"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>
     </div>
